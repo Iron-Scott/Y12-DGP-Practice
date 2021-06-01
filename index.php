@@ -28,10 +28,10 @@
 			
 			<!-- logo / small image goes here -->
 			<div class="box logo">
-				<a href="index.php"><img src="images/logo.png"
-				width ="261"
+				<a href="index.php"><img src="img/logo.jpg"
+				width ="150"
 				height="150"
-				alt="Dice" /></a>
+				alt="Cubist" /></a>
 			</div>
 			
 			<div class="box banner">
