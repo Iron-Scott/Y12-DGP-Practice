@@ -1,63 +1,58 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cubist.Timer</title>
+	<link href="/css/data_style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/responsive.css" rel="stylesheet" type="text/css" />
 
-	<head>
-		<meta charset="utf-8">
-		
-		<!-- For assessment you need to change these -->
-		<meta name="description" content="games, cube">
-		<meta name="keywords" content="Cube Timer, Rubik's Timer, Timer">
-		<meta name="keywords" content="timing">
-		
-		<title>Cubist</title>
-		
-		<!-- for multiple fonts change | to %7c * no spaces* -->
-		<link href="http://fonts.googleapis.com/css?family=Lato%7cUbuntu"
-		rel="stylesheet">
-		
-		<link rel"stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/data_style.css"> <!--custom style sheet -->
-	</head>
-	
-	<body>
-		<p class="message">Eek! Your browser does not support grid. 
-		Please upgrade your system.</p>
-		
-		<div class="wrapper">
-			
-			<!-- logo / small image goes here -->
-			<div class="box logo">
-				<a href="index.php"><img src="img/logo.jpg"
-				width ="150"
-				height="150"
-				alt="Cubist" /></a>
+	<!-- Bootstrap files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+
+	</script>
+
+	<!--FAVICON ICON-->
+	<link rel="icon" type="image/jpg" href="/img/logo.jpg">
+
+</head>
+
+<body>
+	<script src="/scripts/script.js">
+
+	</script>
+
+	<?php include("topbit.php") ?>
+
+		<!-- Contents -->
+		<!-- Using Bootstrap grid ideas Source:https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp -->
+		<h2>Responsive Columns</h2>
+		<p>Resize the browser window to see the effect.</p>
+		<p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+		<div class="row">
+			<div class="col-sm-3">
+				<h3>Playstation.Com</h3>
 			</div>
-			
-			<div class="box banner">
-				<h1>Cubist</h1>
-			</div> <!-- / banner -->
-			
-			<div class="box main">
-				<h2>Welcome</h2>
-				
-				<p>
-					Put link to original dataset here
-				</p>
-			</div> <!-- / main -->
-			
-			<div class="box side">
-				<h2>Search Area</h2>
-				
-				<p>
-					This is where the search area goes
-				</p>
-			</div> <!-- / side -->
-			
-			<div class="box footer">
-				<p>Mr Scott Henderson 2021</p>
-			</div> <!-- / footer -->
-			
-		</div> <!-- / wrapper -->
-	</body>
+			<div class="col-sm-3">
+				<h3>Xbox.Com</h3>
+			</div>
+			<div class="col-sm-3">
+				<h3>Gamespot.Com</h3>
+			</div>
+			<div class="col-sm-3">
+				<h3>Kotaku.Com</h3>
+			</div>
+		</div>
+
+	<?php include ("bottombit.php") ?>
+</body>
+
 </html>
