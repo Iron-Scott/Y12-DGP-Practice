@@ -14,20 +14,4 @@
 			</div>
 		</div>
 
-		<!-- Navigation Bar -->
-		<nav id="nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link active" ref="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about-us.html">About-Us</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="database.html">Database</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="contact-us.html">Contact-Us</a>
-				</li>
-			</ul>
-		</nav>
+		

@@ -35,23 +35,22 @@
 <nav id="nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link active" ref="index.php">Home</a>
+					<a class="nav-link" href="index.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="database.php">Database</a>
+					<a class="nav-link active" ref="database.php">Database</a>
 				</li>
         <li class="nav-item">
 					<a class="nav-link" href="contact-us.html">Contact-Us</a>
 				</li>
 			</ul>
 		</nav>
-
 		<!-- Contents -->
 		<!-- Using Bootstrap grid ideas Source:https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp -->
-		<h2>Cubist Timer</h2>
+		<h2>All Results</h2>
 		
 		<div class="row"><p>	
-		This is Cubist Timer. Our goal is to have a fully-working timing system, writing to a database. This is a project in progress, but will be updated over time.</p>
+		Results will go here...</p>
 		</div>
 	<?php include ("bottombit.php") ?>
 </body>
