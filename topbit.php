@@ -7,9 +7,9 @@
 	include("config.php");
 
  	// Connect to Database
- 	$dbconnect=mysqli_connet (DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 	$dbconnect=mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-	if(mysqli_connect_errno()) {
+	if(mysqli_connect_error()) {
 	echo "Connection failed:".mysqli_connect_error();
 	exit;
 	}
