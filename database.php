@@ -30,7 +30,14 @@
 
 	</script>
 
-	<?php include("topbit.php") ?>
+	<?php include("topbit.php");
+	
+	$find_sql = "SELECT * FROM `cubetimes` ";
+ 	$find_query = mysqli_query($dbconnect, $find_sql);
+	$find_rs = mysqli_fetch_assoc($find_query);
+	$count = mysqli_num_rows($find_query);
+	?>
+	
 <!-- Navigation Bar -->
 <nav id="nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
 			<ul class="navbar-nav">
@@ -50,7 +57,42 @@
 		<h2>All Results</h2>
 		
 		<div class="row"><p>	
-		Results will go here...</p>
+		<?php
+		
+		if($count < 1) {
+
+			?>
+		
+
+		<div class="error">
+
+		Sorry! There are no results to match your search.
+		Please use the search bar in the side bar to try again.
+		
+		</div> <!-- end error -->
+	<?php
+		} // end no results 'if'
+		
+		else {
+			do
+			{
+				?>
+		<!-- Results go here -->
+		<div class="results">
+				You have results!
+		</div> <!-- / Results -->
+
+				<?php
+
+			} // end results 'do'
+
+			while
+				($find_rs=mysqli_fetch_assoc($find_query));
+		} // end results 'else'
+
+		?>
+		
+		</p>
 		</div>
 	<?php include ("bottombit.php") ?>
 </body>
