@@ -79,8 +79,10 @@
 				?>
 		<!-- Results go here -->
 		<div class="results">
-				You have results!
+				<span class='subheading'>
+				<?php echo $find_rs['Time']; ?>
 		</div> <!-- / Results -->
+		<br />
 
 				<?php
 
